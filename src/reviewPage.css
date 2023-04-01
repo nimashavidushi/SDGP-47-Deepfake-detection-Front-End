@@ -1,0 +1,107 @@
+.reviewContainer {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    background-color: #1C1C28;
+  }
+
+  .home-button,
+  .scanner-button,
+  .review-button {
+    background-color: #6966FF;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .home-button:hover,
+  .scanner-button:hover,
+  .review-button:hover {
+    background-color: #666;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #1C1C28;
+    color: #fff;
+  }
+
+  header h1 {
+    font-size: 32px;
+  }
+
+  nav ul {
+    display: flex;
+    list-style-type: none;
+    background-color:  #1C1C28;
+    
+  }
+
+  nav ul li {
+    margin-left: 20px;
+  }
+
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .reviewPgMain {
+    display: block;
+    padding: 100px 200px 100px 200px;
+  }
+
+  form label {
+    display: block;
+    margin-bottom: 10px;
+    color: #C081FF;
+    width: 600px;
+
+  }
+
+  .review{
+    display: block;
+    color: #C081FF;
+    height: 200px;
+  }
+
+  form input,
+  form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #393953;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    color:#fff;
+    background-color: #393953;
+  }
+
+  form button {
+    background-color: #6966FF;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  form button:hover {
+    background-color: #ff7f50;
+  }
+
+  @media screen and (max-width: 600px) {
+    .nav-buttons {
+      flex-direction: column;
+    }
+    .nav-buttons button {
+      margin: 10px 0;
+    }
+  }

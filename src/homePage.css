@@ -1,0 +1,77 @@
+/* App.css */
+/* Style the body */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #1A1A2E;
+    color: #fff;
+  
+  }
+  
+  /* Style the header */
+  header {
+    background-color: #1A1A2E;
+    color: #fff;
+    padding: 20px;
+    position: relative;
+  }
+  
+  /* Style the h1 */
+  h1 {
+    margin: 0;
+    font-size: 36px;
+    
+  }
+  
+  /* Style the review button */
+  .review-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: #6966FF;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  /* Style the scanner button */
+  .scanner-button {
+    background-color: #6966FF;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  /* Style the main content */
+  .homePgMain {
+    padding: 20px;
+    
+  }
+  
+  /* Style the h2 */
+  h2 {
+    font-size: 24px;
+    color: #C081FF;
+  }
+  
+  /* Style the image */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Style the about us section */
+  .about-us {
+    padding: 20px;
+    background-color: #393953;
+  }
+  
+  /* Style the footer */
+  footer {
+    background-color: #393953;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  } 
