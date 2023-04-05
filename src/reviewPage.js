@@ -2,6 +2,20 @@ import React from "react";
 import "./reviewPage.css";
 import { Link } from "react-router-dom";
 import { Form, Button } from "react-bootstrap";
+import emailjs from "emailjs-com";
+
+function sendEmail(e) {
+  e.preventDefault();
+
+  emailjs.sendForm('service_qq9bmqp', 'template_jpf90f9', e.target, '-JEL0BP7EZSYuMUQB')
+    .then((result) => {
+        console.log(result.text);
+    }, (error) => {
+        console.log(error.text);
+    });
+
+  e.target.reset();
+}
 
 function reviewPg() {
   return (
@@ -29,7 +43,7 @@ function reviewPg() {
         </nav>
       </header>
       <main className="reviewPgMain">
-        <Form className="form">
+        <Form className="form" onSubmit={sendEmail}>
           <Form.Group>
             <Form.Label>First Name:</Form.Label>
             <Form.Control type="text" name="firstname" />
@@ -44,7 +58,7 @@ function reviewPg() {
           </Form.Group>
           <Form.Group>
             <Form.Label>Review:</Form.Label>
-            <Form.Control className="review" as="textarea" rows={3} />
+            <Form.Control className="review" as="textarea" rows={3} name="review" />
           </Form.Group>
           <Button type="submit" variant="primary">Submit</Button>
         </Form>
