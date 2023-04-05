@@ -2,105 +2,112 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  }
-  
-  .scannerPgMain{
-    padding: 100px 200px 100px 200px;
-  }
+}
 
-  body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #1a1a2e;
-    color: #fff;
-  }
-  
-  header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    background-color: #1a1a2e;
-    color: #fff;
-  }
-  
-  .home-button,
-  .scanner-button,
-  .review-button {
-    position:static;
-    background-color: #6966FF;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-  }
+.scannerPgMain {
+  padding: 100px 200px 100px 200px;
+}
 
-  .home-button:hover,
-  .scanner-button:hover,
-  .review-button:hover {
-    background-color: #666;
-  }
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #1a1a2e;
+  color: #fff;
+}
 
-  nav ul {
-    display: flex;
-    list-style-type: none;
-    background-color:  #1C1C28;
-    
-  }
+.background-image {
+  background-image: url("https://today.tamu.edu/wp-content/uploads/2020/03/GettyImages-1189020673.jpg");
+  background-size: cover;
+  background-position: center;
+}
 
-  nav ul li {
-    margin-left: 20px;
-    
-  }
-  
-  nav ul li a {
-    color: #fff;
-    text-decoration: none;
-  }
-  
-  .dropzone {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 500px;
-    background-color: #393953;
-    border: 2px dashed #333;
-  }
-  
-  .upload-form {
-    display: flex;
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #1a1a2e;
+  color: #fff;
+}
+
+.home-button,
+.scanner-button,
+.review-button {
+  position: static;
+  background-color: #6966FF;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.home-button:hover,
+.scanner-button:hover,
+.review-button:hover {
+  background-color: #666;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+  background-color: #1C1C28;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.dropzone {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+  background-color: #393953;
+  border: 2px dashed #333;
+}
+
+.form-inline {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-inline input[type="file"],
+.form-inline input[type="text"] {
+  margin: 10px;
+  padding: 10px;
+  border: none;
+  border-bottom: 2px solid #333;
+}
+
+.form-inline button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #6966ff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+h1,
+h2 {
+  margin: 0;
+  font-size: 36px;
+}
+
+@media screen and (max-width: 600px) {
+  .nav-buttons {
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
   }
-  
-  .upload-form input {
-    margin: 10px;
-    padding: 10px;
-    border: none;
-    border-bottom: 2px solid #333;
+  .nav-buttons button {
+    margin: 10px 0;
   }
-  
-  .upload-form button {
-    margin-top: 20px;
-    padding: 10px 20px;
-    background-color: #6966ff;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-  }
-  
-  h1,
-  h2 {
-    margin: 0;
-    font-size: 36px;
-  }
-  @media screen and (max-width: 600px) {
-    .nav-buttons {
-      flex-direction: column;
-    }
-    .nav-buttons button {
-      margin: 10px 0;
-    }
-  }
+}

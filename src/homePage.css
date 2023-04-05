@@ -1,77 +1,115 @@
 /* App.css */
 /* Style the body */
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #1A1A2E;
-    color: #fff;
-  
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #1A1A2E;
+  color: #fff;
+}
+.background-image {
+  background-image: url("https://today.tamu.edu/wp-content/uploads/2020/03/GettyImages-1189020673.jpg");
+  background-size: cover;
+  background-position: center;
+}
+/* Style the header */
+header {
+  background-color: #1A1A2E;
+  color: #fff;
+  padding: 20px;
+}
+
+/* Style the h1 */
+h1 {
+  margin: 0;
+  font-size: 36px;
+}
+
+/* Style the review button */
+.review-button {
+  background-color: #6966FF;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+
+.review-link {
+position: absolute;
+top: 10px;
+right: 10px;
+}
+
+
+
+
+/* Style the scanner button */
+.scanner-button {
+  background-color: #6966FF;
+  color: #fff;
+  border: none;
+  padding: 0px;
+  cursor: pointer;
+}
+
+/* Style the main content */
+.homePgMain {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 120px); /* Adjust height for header and footer */
+}
+
+/* Style the h2 */
+h2 {
+  font-size: 24px;
+  color: #000000;
+  text-align: center;
+}
+.homePgMain h2 {
+  font-size: 54px;
+}
+
+/* Style the image */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Style the about us section */
+.about-us {
+  padding: 20px;
+  background-color: #393953;
+}
+
+.about-us table {
+  margin-top: 20px;
+  border-collapse: collapse;
+  width: 100%;
   }
   
-  /* Style the header */
-  header {
-    background-color: #1A1A2E;
-    color: #fff;
-    padding: 20px;
-    position: relative;
+  .about-us th,
+  .about-us td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 3px solid #ddd;
   }
   
-  /* Style the h1 */
-  h1 {
-    margin: 0;
-    font-size: 36px;
-    
+  .about-us th {
+  background-color: #4CAF50;
+  color: white;
   }
   
-  /* Style the review button */
-  .review-button {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    background-color: #6966FF;
-    color: #fff;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
+  .about-us tr:nth-child(even) {
+  background-color: #021c45;
   }
-  
-  /* Style the scanner button */
-  .scanner-button {
-    background-color: #6966FF;
-    color: #fff;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-  }
-  
-  /* Style the main content */
-  .homePgMain {
-    padding: 20px;
-    
-  }
-  
-  /* Style the h2 */
-  h2 {
-    font-size: 24px;
-    color: #C081FF;
-  }
-  
-  /* Style the image */
-  img {
-    max-width: 100%;
-    height: auto;
-  }
-  
-  /* Style the about us section */
-  .about-us {
-    padding: 20px;
-    background-color: #393953;
-  }
-  
-  /* Style the footer */
-  footer {
-    background-color: #393953;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-  } 
+
+/* Style the footer */
+footer {
+  background-color: #393953;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
