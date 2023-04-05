@@ -13,7 +13,19 @@ function useScannerPg() {
 
   const handleUpload = () => {
     if (videoFile) {
-      // upload video file to server
+      const formData = new FormData();
+      formData.append("video", videoFile);
+
+      fetch("/upload-video", {
+        method: "POST",
+        body: formData,
+      })
+        .then((response) => {
+          console.log(response);
+        })
+        .catch((error) => {
+          console.error(error);
+        });
     }
   };
 
